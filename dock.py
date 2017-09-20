@@ -41,32 +41,32 @@ while True:
         if response['items'][0]['body'] == 'пн' or response['items'][0]['body'] == 'Пн':
             send_msg(item['user_id'], week.mon_week)
             if error_week == True:
-                send_msg(item['user_id'], 'Возможно это расписание неверно')
+                send_msg(item['user_id'], commands.invalid_schedule)
 
         elif response['items'][0]['body'] == 'вт' or response['items'][0]['body'] == 'Вт':
             send_msg(item['user_id'], week.tue_week)
             if error_week == True:
-                send_msg(item['user_id'], 'Возможно это расписание неверно')
+                send_msg(item['user_id'], commands.invalid_schedule)
 
         elif response['items'][0]['body'] == 'ср' or response['items'][0]['body'] == 'Ср':
             send_msg(item['user_id'], week.wed_week)
             if error_week == True:
-                send_msg(item['user_id'], 'Возможно это расписание неверно')
+                send_msg(item['user_id'], commands.invalid_schedule)
 
         elif response['items'][0]['body'] == 'чт' or response['items'][0]['body'] == 'Чт':
             send_msg(item['user_id'], week.thu_week)
             if error_week == True:
-                send_msg(item['user_id'], 'Возможно это расписание неверно')
+                send_msg(item['user_id'], commands.invalid_schedule)
 
         elif response['items'][0]['body'] == 'пт' or response['items'][0]['body'] == 'Пт':
             send_msg(item['user_id'], week.fri_week)
             if error_week == True:
-                send_msg(item['user_id'], 'Возможно это расписание неверно')
+                send_msg(item['user_id'], commands.invalid_schedule)
 
         elif response['items'][0]['body'] == 'сб' or response['items'][0]['body'] == 'Сб':
             send_msg(item['user_id'], week.sat_week)
             if error_week == True:
-                send_msg(item['user_id'], 'Возможно это расписание неверно')
+                send_msg(item['user_id'], commands.invalid_schedule)
 
         elif response['items'][0]['body'] == 'Помощь' or response['items'][0]['body'] == 'помощь':
             send_msg(item['user_id'], commands.help_command)
